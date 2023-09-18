@@ -314,5 +314,3 @@ plot(flowlines$geometry[which(s_maxsss==1)],col='red',lwd=1, add=TRUE)
 # 현재 미래 분포도 들을 .shp 파일로 저장해서 후에 QGIS나 ArcGIS 로 작업을 할 수도 있다.
 st_write(flowlines[which(s_maxsss==1),],'./predicted_current_distribution.shp') # 현재 분포도
 st_write(flowlines[which(s_maxsss_fsubc==1),],'./predicted_future_distribution.shp') # 미래 분포도도
-
-
